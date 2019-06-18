@@ -1,54 +1,55 @@
 
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-      * {
-        box-sizing: border-box;
-      }
-      #myWall {
-        position: fixed;
-        right: 0;
-        bottom: 0;
-        min-width: 100%; 
-        min-height: 100%;
-      }
-      body, html {
-        height: 100%;
-        margin: 0;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 21px;
-        text-align: center;
-        font-weight: 900;
-      }
-      .content{
-        position: relative;
-        height: 100%;
-      }
-      .content img{
-        position: relative;
-        width: 60%;
-        max-width: 600px;
-        padding: 0 20px;
-        top: 10%;
-      }
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-size: 21px;
+  font-weight: 900;
+}
 
-      @media screen and (max-width: 768px) {
-        .content img{
-          top: 30%;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <video autoplay muted loop id="myWall">
-      <source src="fond-site-coming.mp4" type="video/mp4">
-        Your browser does not support HTML5 video.
-    </video>
+.bg {
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("mister-cab.jpg");
+  height: 100%;
+}
 
-    <div class="content">
-      <img src="./stay-tuned.png" alt="coming soon illustration">
-    </div>
-  </body>
+/*@media (max-width: 992px) {
+  .bg {
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+  }
+}*/
+
+.main {
+  position: relative;
+  top: 35%;
+  padding: 0 20px;
+  color: #fff;
+  font-size: 1.5rem;
+}
+</style>
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="bg">
+  <span>&nbsp;</span><br>
+  <div class="main">
+    <p>Notre site se refait une beauté.</p>
+    <p>Nous restons à votre écoute au 01 42 72 71 32</p>
+  </div>
+</div>
+</body>
 </html>
