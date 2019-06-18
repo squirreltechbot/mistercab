@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      #myWall {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%; 
+        min-height: 100%;
+      }
+      body, html {
+        height: 100%;
+        margin: 0;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 21px;
+        text-align: center;
+        font-weight: 900;
+      }
+      .content{
+        position: relative;
+        height: 100%;
+      }
+      .content img{
+        position: relative;
+        width: 60%;
+        max-width: 600px;
+        padding: 0 20px;
+        top: 10%;
+      }
+
+      @media screen and (max-width: 768px) {
+        .content img{
+          top: 30%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <video autoplay muted loop id="myWall">
+      <source src="fond-site-coming.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+
+    <div class="content">
+      <img src="./stay-tuned.png" alt="coming soon illustration">
+    </div>
+  </body>
+</html>
